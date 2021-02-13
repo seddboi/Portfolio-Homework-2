@@ -3,14 +3,17 @@
   }
 
 body {
-    background-color:#08619c;
+    background-color: #000;    
+    background-image: url(../images/matrix-code-animation-gif-free-animated-background.gif);
+    background-repeat: repeat;
+    background-size: 100%;
 }
 
 .header {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color:black;
+    background-image:linear-gradient(lime, green);
     color: #ffffff;
     margin-bottom: 30px;
     border: #ffffff solid 3px;
@@ -40,7 +43,7 @@ body {
 }
 
 a {
-    color: rgb(255, 238, 0);
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -61,7 +64,7 @@ a {
     left: 50%;
     width: 60%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 238, 0);
+    color: #ffffff;
     font-size: 30px;
     text-align: center;
     text-shadow: 0px 5px 20px black;
@@ -70,23 +73,43 @@ a {
 .back-image {
     border: #ffffff solid 3px;
     border-radius: 25px;
-    object-fit: cover;
+    object-position: center;
     opacity: 90%;
-    margin-bottom: 30px
 }
 
 .about-me {
     display: flex;
     flex-direction: column;
-    border: #ffffff solid 3px;
     padding: 20px;
 }
 
-.about-me section {
+#about-me-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.messages {
+    background-image: url(../images/retro-80s-background-lovely-resource-horizontal-scrolling-80s-retro-neon-grid-1080p-of-the-day-of-retro-80s-background.jpg);
+    background-size: 600px 300px;
+    opacity: 80%;
     border: #ffffff solid 3px;
     border-radius: 25px;
     padding: 20px;
     width: 600px;
     margin-bottom: 30px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me-sections {
+    font-size: 25px;
+}
+
+
+
+#right {
+    align-self: flex-end;
 }
 

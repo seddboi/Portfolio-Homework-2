@@ -7,6 +7,7 @@ body {
     background-image: url(../images/matrix-code-animation-gif-free-animated-background.gif);
     background-repeat: repeat;
     background-size: 100%;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .header {
@@ -87,6 +88,9 @@ a {
     text-align: center;
     color: #ffffff;
     font-size: 40px;
+    border: solid #ffffff 3px;
+    border-radius: 25px;
+    background-image: linear-gradient(lime, green);
 }
 
 .messages {
@@ -107,9 +111,23 @@ a {
     font-size: 25px;
 }
 
-
-
 #right {
     align-self: flex-end;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#projects-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    border: solid #ffffff 3px;
+    border-radius: 25px;
+    background-image: linear-gradient(lime, green);
+}
+
 

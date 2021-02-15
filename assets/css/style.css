@@ -130,4 +130,32 @@ a {
     background-image: linear-gradient(lime, green);
 }
 
+.project-sections {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: auto;
+    margin-bottom: 30px;
+    border: solid #ffffff 3px;
+    border-radius: 25px;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+}
 
+.project-sections h3 {
+    text-align: center;
+}
+
+/* .pic-n-text {
+    display: flex;
+    flex-direction: column;
+} */
+
+#gtr {
+    display: flex;
+    align-self: center;
+    border-radius: 25px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+    border: solid #ffffff 3px;
+}

@@ -6,35 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" 
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" 
+    crossorigin="anonymous">
+
     <title>Gian's Portfolio!</title>
 </head>
 
 <body>
-    <header class="header">
-            <h2>Gian's Portfolio</h2>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#about-me-title">About Me</a></li>
-                    <li><a href="#projects-title">My Projects</a></li>
-                    <li><a href="#A-Little-About-Me">Contact Me</a></li>
-                    <li><a href="#A-Little-About-Me">Resume</a></li>
-                </ul>
-            </nav>
-    </header>
+
+    <div id='top-bar' class="top-bar">
+        <div class="top-bar-left">
+          <h5 id='menu-text' class="menu-text"><strong>Welcome To My Page!</strong></h5>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu" id='menu'>
+            <li><a href='#about-me-title'>About Me</a></li>
+            <li><a href='#projects-title'>My Projects</a></li>
+            <li><a href='#contact-title'>Contact Me</a></li>
+            <li><a>Resume</a></li>
+          </ul>
+        </div>
+    </div>
     
     <div class="main-title">
-        <div class="message">
-            <h1>Gian Paulo Zamora</h1>
-            <h3>Full-Stack Web Developer/Programmer</h2>
-            <h3>Welcome to my Portfolio Page!</h3>
+        <div class="main-title-text">
+            <h1><strong>Gian Paulo Zamora</strong></h1>
+            <h2><strong>Full-Stack Web Developer/Programmer</strong></h2>
         </div>
-        <img class="back-image" src="./assets/images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" width=100%>
     </div>
     
     <div class="about-me">
-        <h2 id="about-me-title">Here's a little about me...</h2>
+        <h1 id='about-me-title'>About Me</h1>
+
+        <!-- <ul class="accordion" data-accordion>
+            <li class="accordion-item is-active" data-accordion-item>
+                <a class="accordion-title">My Initial Beginnings</a>
+          
+                <div class="accordion-content" data-tab-content>
+                    <p>I am a 22 year old Applied Mathematics Major, who just recently graduated from the 
+                        University of California Riverside in the Summer of 2020. 
+                        A majority of my college career, I spent most of my time studying, 
+                        participating in research, and growing my Mathematics knowledge by being an avid member of the UCR Mathematics Club.
+                        Apart from my endeavors in school, I found small interests in studying Python coding and gaining Google certificates for Ad Search.</p>
+                </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+                <a class="accordion-title">What caused my change in Career Path?</a>
+            
+                <div class="accordion-content" role="tabpanel" data-tab-content>
+                    <p>Web Development became the newest venture of mine, since it is a growing industry and I have a shared interest in 
+                        learning the "behind the scenes" knowledge that allows computers to function. Initially, I started off with very 
+                        little knowledge of developing coherent code. This, along with my rapidly growing interests in Web Development
+                        and Programming, urged me to sign up for the Full-Stack Web Development Bootcamp offered at the UCR Extension.</p>
+                </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+                <a class="accordion-title">What have I gained from this?</a>
+            
+                <div class="accordion-content" data-tab-content>
+                    <p>As of today I am religiously practicing HTML, CSS Styling, and Javascript (in terms of Web development).
+                        I also am proficient in Python, as I have gained a Code Academy certificate through about 6+ months worth of Python 
+                        practice and study within their program. Both programs also taught me how to establish a profile among Github, from which I 
+                        learned to understand the Git version control system. Now I use all of this knowledge to establish a stronger foundation
+                        in my journey in becoming a Full-Stack Web Developer/Programmer.r</p>
+                </div>
+            </li>
+        </ul> -->
         
-        <section class="messages">
+        <section id='about-me-callouts' class="callout large">
             <h4 id="about-me-sections">My Initial Beginnings</h4>
             <p id="about-me-desc">I am a 22 year old Applied Mathematics Major, who just recently graduated from the 
                 University of California Riverside in the Summer of 2020. 
@@ -45,7 +88,7 @@
             </p>
         </section>
             
-        <section id="right" class="messages">
+        <section id='about-me-callouts' class="callout large">
             <h4 id="about-me-sections">What caused my change in Career Path?</h4>
             <p id="about-me-desc">Web Development became the newest venture of mine, since it is a growing industry and I have a shared interest in 
                 learning the "behind the scenes" knowledge that allows computers to function. Initially, I started off with very 
@@ -54,13 +97,13 @@
             </p>
         </section>
 
-        <section class="messages">
+        <section id='about-me-callouts' class="callout large">
             <h4 id="about-me-sections">What have I gained from this?</h4>
             <p id="about-me-desc">As of today I am religiously practicing HTML, CSS Styling, and Javascript (in terms of Web development).
                 I also am proficient in Python, as I have gained a Code Academy certificate through about 6+ months worth of Python 
                 practice and study within their program. Both programs also taught me how to establish a profile among Github, from which I 
                 learned to understand the Git version control system. Now I use all of this knowledge to establish a stronger foundation
-                in my journey in becoming a Full Full-Stack Web Developer/Programmer.
+                in my journey in becoming a Full-Stack Web Developer/Programmer.
             </p>
         </section>
     </div>
@@ -68,42 +111,52 @@
     <div class="projects">
         <h2 id="projects-title">My Projects</h2>
 
-        <section class="project-sections">
-            <h3>**project 1 title**</h3>
-            <div class="pic-n-text">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                    <li>Vestibulum vulputate elit at augue imperdiet fringilla.</li>
-                    <li>Donec faucibus luctus orci in lobortis. In eu aliquet ex, quis pretium sapien.</li>
+        <section id='project-callout' class="callout">
+            <h3 style='text-align: center;'>Save-A-Shot</h3>
+            <div class="cell grid-x align-middle align-center align-spaced ">
+                <ul id='list'>
+                    <li><h5>Vaccination tracker using the VaccinateCA API, which discovers nearby available COVID-19 vaccinations and updates in live time.</h5></li>
+                    <li><h5>Available for California only at the moment; remaining states in the U.S. are subjected to visiting health pages according to their state (provided on their landing page).</h5></li>
+                    <li><h5>Active Link: <a src='https://seddboi.github.io/Save-A-Shot/'>https://seddboi.github.io/Save-A-Shot/</a></h5></li>
+                    <li><h5>Github Repo: <a src='https://github.com/seddboi/Save-A-Shot'>https://github.com/seddboi/Save-A-Shot</a></h5></li>
                 </ul>
-                <img id="gtr" src="./assets/images/sk6.jpg">
+                <img id='gtr' src="./assets/images/sk6.jpg">
             </div>
         </section>
 
-        <section id="project-2" class="project-sections">
-            <h3>**project 2 title**</h3>
-            <div class="pic-n-text">
-                <ul>
+        <section id='project-callout' class="callout">
+            <h3 style='text-align: center;'>**project 2 title**</h3>
+            <div class="cell grid-x align-middle align-center align-spaced">
+                <ul id='list'>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                     <li>Vestibulum vulputate elit at augue imperdiet fringilla.</li>
                     <li>Donec faucibus luctus orci in lobortis. In eu aliquet ex, quis pretium sapien.</li>
                 </ul>
-                <img id="gtr" src="./assets/images/sk6.jpg">
+                <img id='gtr' src="./assets/images/sk6.jpg">
             </div>
         </section>
 
-        <section id="project-3" class="project-sections">
-            <h3>**project 3 title**</h3>
-            <div class="pic-n-text">
-                <ul>
+        <section id='project-callout' class="callout">
+            <h3 style='text-align: center;'>**project 2 title**</h3>
+            <div class="cell grid-x align-middle align-center align-spaced">
+                <ul id='list'>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                     <li>Vestibulum vulputate elit at augue imperdiet fringilla.</li>
                     <li>Donec faucibus luctus orci in lobortis. In eu aliquet ex, quis pretium sapien.</li>
                 </ul>
-                <img id="gtr" src="./assets/images/sk6.jpg">
+                <img id='gtr' src="./assets/images/sk6.jpg">
             </div>
         </section>
     </div>
+
+    <div class='contact'>
+        <h2 id='contact-title'>Contact Me</h2>
+
+        <div id='contact-section' class='callout large'>
+            <h3>Email: gzamora2016@gmail.com</h3>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 </body>
 
 </html>

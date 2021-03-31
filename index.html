@@ -153,9 +153,18 @@
     <div class='contact'>
         <h2 id='contact-title'>Contact Me</h2>
 
-        <div id='contact-section' class='callout large'>
-            <h3>Email: gzamora2016@gmail.com</h3>
-        </div>
+        <form id='contact-section' action="https://mailthis.to/sedboi"
+            method="POST" encType="multipart/form-data">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="_replyto" placeholder="Your email">
+            <textarea name="message" placeholder="Enter your message here"></textarea>
+            <input type="file" name="file" placeholder="Attachments (optional)">
+            <input type="hidden" name="_subject" value="Contact form submitted">
+            <input type="hidden" name="_after" value="https://myhomepage.net/">
+            <input type="hidden" name="_honeypot" value="">
+            <input type="hidden" name="_confirmation" value="">
+            <button id='glow-on-hover' type="submit">Send</button>
+        </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 </body>
